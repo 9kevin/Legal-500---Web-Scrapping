@@ -2,7 +2,7 @@
 """
 Created on Thu Aug 19 01:14:32 2021
 
-@author: ALU Student 100
+@author: Kevin Sebineza
 """
 
 from bs4 import BeautifulSoup
@@ -10,6 +10,7 @@ import requests
 
 import sys
 
+# List variables 
 logo_arr = []
 address_arr = []
 web_arr = []
@@ -103,7 +104,8 @@ def get_details(link):
                 lawyers_arr.append(lawyer_names)
     except:
         pass
-    
+
+# Main
 if __name__ == '__main__':  
     user_link = sys.argv[1]
     get_details(user_link)
